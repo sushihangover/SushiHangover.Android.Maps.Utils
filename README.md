@@ -1,18 +1,14 @@
-<dl>
-<iframe class="devsite-embedded-youtube-video" data-video-id="nb2X9IjjZpM" data-autohide="1" data-showinfo="0" frameborder="0" allowfullscreen="" id="ytplayer0" src="//www.youtube.com/embed/nb2X9IjjZpM?autohide=1&amp;showinfo=0&amp;enablejsapi=1" origin="https://developers.google.com">
-</iframe>
-</dl>
-
 ##SushiHangover.Android.Maps.Utils
 
 **Handy extensions to the Google Maps Android API.**
 
-[Google Maps Android API Utility Library](https://developers.google.com/maps/documentation/android-api/utility/
+Xamarin Android Binding Library for [Google Maps Android API Utility Library](https://developers.google.com/maps/documentation/android-api/utility/
 )
+
 
 ##Current project status:
 
-[![Build status](https://ci.appveyor.com/api/projects/status/ronof3ruyjpl1c4v/branch/master?svg=true)](https://ci.appveyor.com/project/sushihangover/realm-json-extensions/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/6ju7624aikljjha1?svg=true)](https://ci.appveyor.com/project/sushihangover/realm-json-extensions/branch/master)
 
 ##Nuget:
 

@@ -249,7 +249,7 @@ Task("UpdateAssemblyInfo")
     var file = "./src/CommonAssemblyInfo.cs";
 
     CreateAssemblyInfo(file, new AssemblyInfoSettings {
-        Product = "SushiHangover.RealmJson.Extensions",
+        Product = "SushiHangover.Android.Maps.Utils",
         Version = majorMinorPatch,
         FileVersion = majorMinorPatch,
         InformationalVersion = informationalVersion,
@@ -277,7 +277,7 @@ Task("Package")
     .IsDependentOn("RunUnitTests")
     .Does (() =>
 {
-    Package("./src/RealmJson.Extensions.nuspec", "./src");
+    Package("./src/SushiHangover.Android.Maps.Utils.nuspec", "./src");
 });
 
 Task("PublishPackages")

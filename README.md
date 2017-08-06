@@ -57,6 +57,8 @@ MoveCameraToKml(kmlLayer);
 		);
 	}
 
+![](media/campus.png)
+
 ## Issues?
 
 ### Post issues on [GitHub](https://github.com/sushihangover/SushiHangover.Android.Maps.Utils/issues)

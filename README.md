@@ -26,7 +26,7 @@ Ref: [https://www.nuget.org/packages/SushiHangover.Android.Maps.Utils](https://w
 
 I did *not* port the Java sample in the Google Repo to C#, would love a pull-request ;-)
 
-I am using a number of the classes/methods in a few of projects so I know the "basics" al work... If there are any methods that are returning `Java.Lang.Object` vs. a more better/formal concrete class, post an issue or even better, a pull-reuquest ;-)
+I am using a number of the classes/methods in a few of projects so I know the "basics" work... If there are any methods that are returning `Java.Lang.Object` vs. a more formal concrete class, post an issue or even better, a pull-reuquest ;-)
 
 ### A Demo Snippet:
 

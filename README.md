@@ -5,10 +5,9 @@
 Xamarin Android Binding Library for [Google Maps Android API Utility Library](https://developers.google.com/maps/documentation/android-api/utility/
 )
 
-
 ##Current project status:
 
-[![Build status](https://ci.appveyor.com/api/projects/status/6ju7624aikljjha1?svg=true)](https://ci.appveyor.com/project/sushihangover/realm-json-extensions/branch/master)
+[![Build status](https://ci.appveyor.com/api/projects/status/6ju7624aikljjha1?svg=true)](https://ci.appveyor.com/project/sushihangover/sushihangover-android-maps-utils/branch/master)
 
 ##Nuget:
 
@@ -32,42 +31,6 @@ Post on [StackOverflow](http://stackoverflow.com/questions/tagged/xamarin+Xamari
 
 ##Github Repo:
 
-[https://github.com/googlemaps/android-maps-utils](https://github.com/googlemaps/android-maps-utils)
+Library: [https://github.com/googlemaps/android-maps-utils](https://github.com/googlemaps/android-maps-utils)
 
-<head>
-<style>
-.nuget-badge code {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background-color: #202020;
-    border: 4px solid silver;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px #6e6e6e;
-    color: #e2e2e2;
-    display: block;
-    font: 1.0em 'andale mono', 'lucida console', monospace;
-    line-height: 1.5em;
-    overflow: auto;
-    padding: 15px
-}
-.nuget-badge code::before {
-    content: "PM> "
-}
-.code {
-    -moz-border-radius: 5px;
-    -webkit-border-radius: 5px;
-    background-color: #202020;
-    border: 4px solid silver;
-    border-radius: 5px;
-    box-shadow: 2px 2px 3px #6e6e6e;
-    color: #e2e2e2;
-    display: block;
-    font: 1.0em 'andale mono', 'lucida console', monospace;
-    line-height: 1.5em;
-    overflow: auto;
-    padding: 15px
-}
-
-</style>
-</head>
-
+Binding: [https://github.com/sushihangover/SushiHangover.Android.Maps.Utils](https://github.com/sushihangover/SushiHangover.Android.Maps.Utils)

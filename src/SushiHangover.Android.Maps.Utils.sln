@@ -1,0 +1,30 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SushiHangover.Android.Maps.Utils", "SushiHangover.Android.Maps.Utils\SushiHangover.Android.Maps.Utils.csproj", "{CD823E77-2113-4016-81EC-B782A9091C06}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{92A4CA32-EBF1-4150-A72F-ABB5FEFB91E4}"
+	ProjectSection(SolutionItems) = preProject
+		..\LICENSE = ..\LICENSE
+		..\README.md = ..\README.md
+		..\build.cake = ..\build.cake
+		..\build.ps1 = ..\build.ps1
+		..\build.sh = ..\build.sh
+		..\GitReleaseManager.yaml = ..\GitReleaseManager.yaml
+		..\GitVersion.yml = ..\GitVersion.yml
+		..\appveyor.yml = ..\appveyor.yml
+		SushiHangover.Android.Maps.Utils.nuspec = SushiHangover.Android.Maps.Utils.nuspec
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD823E77-2113-4016-81EC-B782A9091C06}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD823E77-2113-4016-81EC-B782A9091C06}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD823E77-2113-4016-81EC-B782A9091C06}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD823E77-2113-4016-81EC-B782A9091C06}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

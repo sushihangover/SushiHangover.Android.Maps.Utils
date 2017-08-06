@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+ 	<version>$version$</version>
+    <id>SushiHangover.Android.Maps.Utils</id>
+    <title>SushiHangover.Android.Maps.Utils</title>
+ 	<description>Handy extensions to the Google Maps Android API. e</description>
+ 	<summary>Xamarin.Android Binding Library | Google Maps Android API Utility Library | Handy extensions to the Google Maps Android API. </summary>
+    <language>en-US</language>
+    <copyright>2017 - SushiHangover/RobertN</copyright>
+    <authors>SushiHangover</authors>
+    <projectUrl>https://github.com/sushihangover/SushiHangover.Android.Maps.Utils</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/sushihangover/>SushiHangover.Android.Maps.Utils/master/media/icon.png</iconUrl>
+    <licenseUrl>https://github.com/sushihangover/SushiHangover.Android.Maps.Utils</licenseUrl>
+    <tags>Xamarin Android Google Maps SushiHangover</tags>
+  </metadata>
+  <files>
+    <file src="SushiHangover.Android.Maps.Utils/bin/Release/SushiHangover.Android.Maps.Utils.dll" target="lib" />
+  </files>
+</package>

@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+	<!-- Fix Namespaces -->
+    <attr path="/api/package[@name='com.google.maps.android']" name="managedName">Android.Gms</attr>
+	
+    <attr path="/api/package[@name='com.google.maps.android.data']" name="managedName">Android.Gms.Data</attr>
+    <attr path="/api/package[@name='com.google.maps.android.data.geojson']" name="managedName">Android.Gms.Data.GeoJson</attr>
+    <attr path="/api/package[@name='com.google.maps.android.data.klm']" name="managedName">Android.Gms.Data.Klm</attr>
+
+    <attr path="/api/package[@name='com.google.maps.android.clustering']" name="managedName">Android.Gms.Clustering</attr>
+    <attr path="/api/package[@name='com.google.maps.android.clustering.algo']" name="managedName">Android.Gms.Clustering.Algo</attr>
+    <attr path="/api/package[@name='com.google.maps.android.clustering.view']" name="managedName">Android.Gms.Clustering.View</attr>
+
+    <attr path="/api/package[@name='com.google.maps.android.geometry']" name="managedName">Android.Gms.Geometry</attr>
+    <attr path="/api/package[@name='com.google.maps.android.heatmap']" name="managedName">Android.Gms.HeatMap</attr>
+    <attr path="/api/package[@name='com.google.maps.android.projection']" name="managedName">Android.Gms.Projection</attr>
+
+    <attr path="/api/package[@name='com.google.maps.android.quadtree']" name="managedName">Android.Gms.QuadTree</attr>
+    <attr path="/api/package[@name='com.google.maps.android.ui']" name="managedName">Android.Gms.Ui</attr>
+	
+    <!-- Fix visibility -->	
+	<attr path="/api/package[@name='com.google.maps.android.data']/class[@name='Layer']/method[@name='getGroundOverlays' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.maps.android.data']/class[@name='Layer']/method[@name='getContainers' and count(parameter)=0]" name="visibility">public</attr>
+	<attr path="/api/package[@name='com.google.maps.android.data']/class[@name='Layer']/method[@name='hasContainers' and count(parameter)=0]" name="visibility">public</attr>
+    <attr path="/api/package[@name='com.google.maps.android.data']/interface[@name='Geometry']/method[@name='getGeometryObject' and count(parameter)=0]" name="visibility">public</attr>
+    <attr path="/api/package[@name='com.google.maps.android.data']/interface[@name='Geometry']/method[@name='getGeometryType' and count(parameter)=0]" name="visibility">public</attr>
+    <attr path="/api/package[@name='com.google.maps.android.data.geojson']/interface[@name='GeoJsonStyle']" name="visibility">public</attr>
+
+<!--
+     The following classes need fixed IF you are programmically creating Data.Point, Data.MultiGeometry, Data.GeoJsonPolygon
+-->
+    <remove-node path="/api/package[@name='com.google.maps.android.data.geojson']/class[@name='GeoJsonPolygon']" />
+    <remove-node path="/api/package[@name='com.google.maps.android.data']/class[@name='Point']" />
+    <remove-node path="/api/package[@name='com.google.maps.android.data']/class[@name='MultiGeometry']" />
+</metadata>

@@ -1,4 +1,4 @@
-
+    
 ## SushiHangover.Android.Maps.Utils
 
 **Handy extensions to the Google Maps Android API.**

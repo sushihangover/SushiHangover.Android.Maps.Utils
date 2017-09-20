@@ -1,0 +1,61 @@
+﻿
+https://developer.xamarin.com/guides/android/advanced_topics/java_integration_overview/working_with_jni/
+
+https://developer.xamarin.com/guides/android/advanced_topics/java_integration_overview/android_callable_wrappers/
+
+https://developer.xamarin.com/guides/android/troubleshooting/troubleshooting/#Global_Reference_Messages
+
+    adb shell setprop debug.mono.log gref
+
+Querying Programmatically
+
+    You can query both the GREF and WREF counts by querying the JniRuntime object.
+
+    Java.Interop.JniRuntime.CurrentRuntime.GlobalReferenceCount - Global Reference Count
+
+    Java.Interop.JniRuntime.CurrentRuntime.WeakGlobalReferenceCount - Weak Reference Count
+
+https://stackoverflow.com/questions/9938834/jnihandleownership-in-mono-for-android
+
+Links to Xamarin documentation are 404...
+
+    JniHandleOwnership.DoNotTransfer should be used if nothing should be done with 
+    the handle parameter. This should always be used within connector methods.
+
+    JniHandleOwnership.TransferLocalRef should be used when you have a local 
+    reference (e.g. you called JNIEnv.CallObjectMethod(), which returns a local 
+    reference) and you want to pass ownership of the local reference to a wrapper.
+
+    JniHandleOwnership.TransferGlobalRef should be used when you have a global 
+    reference and you want to pass ownership of the global reference to a wrapper:
+
+Local vs. Global References
+
+Every object that JNI returns is a "local reference". This means that it's 
+valid for the duration of the current native method in the current thread. 
+Even if the object itself continues to live on after the native method returns, 
+the reference is not valid. This applies to all sub-classes of jobject, 
+including jclass and jarray. (Dalvik VM will warn you about this 
+when -Xcheck:jni is enabled.)
+
+If you want to hold on to a reference for a longer period, you must use 
+a "global" reference. The NewGlobalRef function takes the local reference as 
+an argument and returns a global one:
+
+jobject* localRef = [...];
+jobject* globalRef;
+globalRef = env->NewGlobalRef(localRef);
+The global reference is guaranteed to be valid until you call DeleteGlobalRef.
+All JNI methods accept both local and global references as arguments.
+
+Programmers are required to "not excessively allocate" local references. 
+In practical terms this means that if you're creating large numbers of local 
+references, perhaps while running through an array of Objects, you should free
+them manually with DeleteLocalRef instead of letting JNI do it for you. 
+The VM is only required to reserve slots for 16 local references, so if you 
+need more than that you should either delete as you go or use EnsureLocalCapacity 
+to reserve more.
+
+Note: method and field IDs are just 32-bit identifiers, not object references, 
+and should not be passed to NewGlobalRef. The raw data pointers returned by 
+functions like GetStringUTFChars and GetByteArrayElements are also not objects.

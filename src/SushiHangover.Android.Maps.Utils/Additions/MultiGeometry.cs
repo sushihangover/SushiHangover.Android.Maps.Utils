@@ -4,6 +4,7 @@ namespace Android.Gms.Data
 {
 	public partial class MultiGeometry
 	{
-		public unsafe IList<Android.Gms.Data.IGeometry> GeometryObject => GeometryJavaObject() as IList<Android.Gms.Data.IGeometry>;
+		//java.util.List<Geometry> getGeometryObject()
+		public unsafe IList<Data.IGeometry> GeometryObject => new Runtime.JavaList<Data.IGeometry>(GeometryJavaObject().Handle, Runtime.JniHandleOwnership.DoNotTransfer);
 	}
 }

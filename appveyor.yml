@@ -12,3 +12,5 @@ build_script:
 test: off
 artifacts:
 - path: artifacts/*
+skip_branch_with_pr: true
+

@@ -15,6 +15,6 @@
     <tags>Xamarin Android Google Maps SushiHangover</tags>
   </metadata>
   <files>
-    <file src="SushiHangover.Android.Maps.Utils/bin/Release/SushiHangover.Android.Maps.Utils.dll" target="lib/MonoAndroid71" />
+    <file src="SushiHangover.Android.Maps.Utils/bin/Release/SushiHangover.Android.Maps.Utils.dll" target="lib/MonoAndroid80" />
   </files>
 </package>
